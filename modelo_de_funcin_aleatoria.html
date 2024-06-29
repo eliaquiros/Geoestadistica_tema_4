@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Modelo de función aleatoria | Tema_4 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Elia Quirós Rosado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-6"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema_4</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 4: Aplicaciones estadísticas a modelos vectoriales</a></li>
+   <li><a href="objetivos_del_tema_4.html" class="no-ch">Objetivos del tema 4</a></li>
+   <li class="current-page-parent"><a href="contenidos_del_tema.html" class="current-page-parent daddy">Contenidos del tema</a>
+   <ul>
+      <li><a href="ndices_de_correlacin_espacial.html" class="daddy">Índices de correlación espacial</a>
+      <ul class="other-section">
+         <li><a href="comparacin_i_moran_g_general_getisord.html" class="no-ch">Comparación I Moran/ G general Getis-Ord</a></li>
+      </ul>
+      </li>
+      <li id="active"><a href="modelo_de_funcin_aleatoria.html" class="active daddy">Modelo de función aleatoria</a>
+      <ul>
+         <li><a href="variables_regionalizadas.html" class="no-ch">Variables regionalizadas</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="documentacin_del_tema.html" class="daddy">Documentación del tema</a>
+   <ul class="other-section">
+      <li><a href="datos.html" class="no-ch">Datos</a></li>
+   </ul>
+   </li>
+   <li><a href="modelo_memoria_de_la_prctica.html" class="no-ch">Modelo memoria de la práctica</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="comparacin_i_moran_g_general_getisord.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="variables_regionalizadas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Modelo de función aleatoria</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_lee" id="id6">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Modelo de función aleatoria (RF)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta6_126_2" class="block iDevice_content">
+<div class="exe-text"><p>La geoestadística implica una división conceptual de la variación espacial de una variable (en un lugar x) en dos componentes distintas: una componente determinista (<em>μ(x)</em>) (que representa el cambio "gradual" en el área de estudio) y una componente estocástica (o "aleatorio") (<em>R(x)</em>): </p>
+<p><span style="text-decoration: underline;"><span style="color: #3366ff;"><strong><a class="exe-dialog-link" rel="lightbox" href="#t09a76771-2c6d-f186-a8a9-ecc3b7bc96b2" id="link09a76771-2c6d-f186-a8a9-ecc3b7bc96b2" style="color: #3366ff;"> <img src="img0.2.png" width="202" height="40" alt="ecuación" /> </a></strong></span></span></p>
+<p>Se trata de un <strong>modelo de "función aleatoria" (RF)</strong>. La parte aleatoria refleja nuestra incertidumbre sobre las variables espaciales: lo que nos parece aleatorio es una función de una multiplicidad de factores que pueden ser imposibles de modelizar directamente. Una realización de una RF se denomina <strong>variable regionalizada. </strong></p>
+<hr />
+<p>Al igual que estimamos parámetros como la media o la varianza de una distribución utilizando los propios datos, los parámetros del modelo RF utilizando los datos. Estos parámetros, al igual que la media y la varianza, resumen la variable. </p>
+<p>La media y la varianza de una de una distribución sólo son útiles si la distribución es aproximadamente normal y, del mismo modo, los parámetros del modelo de RF sólo son significativos en determinadas condiciones:</p>
+<ul>
+<li>Cuando <span style="text-decoration: underline;">las propiedades de la variable de interés son las mismas</span>, o al menos similares en algún sentido, en toda la región de interés podemos emplear un <strong>modelo estacionario</strong>.</li>
+<li>Si <span style="text-decoration: underline;">las propiedades de la variable son claramente variables</span> desde el punto de vista espacial, <strong>un modelo de RF estándar puede no ser adecuado</strong>.</li>
+</ul>
+<p>Existen diferentes grados de estacionariedad, pero en este tema sólo consideraremos uno, la <strong>estacionariedad intrínseca</strong>. Existen dos requisitos para la estacionariedad intrínseca:</p>
+<ul>
+<li><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#tfca013a1-342f-4e1b-4dd6-9bd4a4f4472d" id="linkfca013a1-342f-4e1b-4dd6-9bd4a4f4472d" style="color: #3366ff;">La media es constante en toda la región de interés</a></span>. </li>
+<li><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t0e7dad95-04d6-8b05-0594-702de9876edb" id="link0e7dad95-04d6-8b05-0594-702de9876edb" style="color: #3366ff;">La diferencia al cuadrado esperada entre RF emparejadas (es decir, las observaciones) debería depender únicamente de la distancia de separación y de la dirección entre los puntos</a>.</span></li>
+</ul>
+<p><strong>A su vez, una variable regionalizada, es una variable distribuida en el espacio de forma que presenta una estructura espacial de correlación.</strong></p>
+<hr />
+<p>Podemos hacernos las siguientes preguntas:</p>
+<p><strong><span style="color: #333333;">¿Hay una correlación? ¿Cómo de sólida es la relación? ¿Qué variables son los indicadores más consistentes? ¿Las relaciones son consistentes en toda el área de estudio?</span></strong></p>
+<p></p>
+<div id="t09a76771-2c6d-f186-a8a9-ecc3b7bc96b2" class="exe-dialog-text js-hidden">
+<p><strong><em>μ(x)</em></strong> es la componente determinista que representa el cambio "gradual" en el área de estudio.</p>
+<p><strong><em>R(x)</em></strong> es la componente estocástica o aleatoria.</p>
+</div>
+<div id="tfca013a1-342f-4e1b-4dd6-9bd4a4f4472d" class="exe-dialog-text js-hidden">
+<p>En otras palabras, el valor esperado de la variable no depende de la ubicación, x.</p>
+</div>
+<div id="t0e7dad95-04d6-8b05-0594-702de9876edb" class="exe-dialog-text js-hidden">
+<p>En otras palabras, no debería depender de su ubicación espacial.</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="comparacin_i_moran_g_general_getisord.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="variables_regionalizadas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

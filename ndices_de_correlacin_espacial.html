@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Índices de correlación espacial | Tema_4 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Elia Quirós Rosado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-3"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema_4</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 4: Aplicaciones estadísticas a modelos vectoriales</a></li>
+   <li><a href="objetivos_del_tema_4.html" class="no-ch">Objetivos del tema 4</a></li>
+   <li class="current-page-parent"><a href="contenidos_del_tema.html" class="current-page-parent daddy">Contenidos del tema</a>
+   <ul>
+      <li id="active"><a href="ndices_de_correlacin_espacial.html" class="active daddy">Índices de correlación espacial</a>
+      <ul>
+         <li><a href="comparacin_i_moran_g_general_getisord.html" class="no-ch">Comparación I Moran/ G general Getis-Ord</a></li>
+      </ul>
+      </li>
+      <li><a href="modelo_de_funcin_aleatoria.html" class="daddy">Modelo de función aleatoria</a>
+      <ul class="other-section">
+         <li><a href="variables_regionalizadas.html" class="no-ch">Variables regionalizadas</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="documentacin_del_tema.html" class="daddy">Documentación del tema</a>
+   <ul class="other-section">
+      <li><a href="datos.html" class="no-ch">Datos</a></li>
+   </ul>
+   </li>
+   <li><a href="modelo_memoria_de_la_prctica.html" class="no-ch">Modelo memoria de la práctica</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="contenidos_del_tema.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="comparacin_i_moran_g_general_getisord.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Índices de correlación espacial</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_lee" id="id3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Índices de correlación espacial</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta3_123_2" class="block iDevice_content">
+<div class="exe-text"><p>Los índices de correlación espacial miden la dependencia espacial de una variable.</p>
+<p>Los métodos de autocorrelación espacial más conocidos son<strong> I de Moran</strong> y <strong>G general de Getis-Ord</strong>. El último método tiene un <span style="text-decoration: underline;">carácter local</span>, mientras que el primero permite analizar el espacio de una forma<span style="text-decoration: underline;"> global</span>.</p>
+<div class="exe-fx exe-tabs">
+<h2>Índice de Moran</h2>
+<p>Es la medida de autocorrelación espacial que se encuentra más frecuentemente en la literatura del análisis espacial. </p>
+<p>La hipótesis nula: <span style="text-decoration: underline;"><em>"no existe agrupación espacial de los valores de la variable"</em></span></p>
+<p>El índice viene dado por la siguiente expresión:</p>
+<p><span style="text-decoration: underline;"><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t8e88c701-afb7-bffc-07cb-77755cdf907b" id="link8e88c701-afb7-bffc-07cb-77755cdf907b" style="color: #3366ff;"><img src="img0.1.png" width="262" height="86" alt="Ecuación índice Moran" /></a></span></span></p>
+<p>Los valores negativos de I indican una <span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t439c0866-38e1-f370-462e-27c84b848ed4" id="link439c0866-38e1-f370-462e-27c84b848ed4" style="color: #3366ff;">autocorrelación espacial negativa</a></span>. Los valores positivos de I indican una <span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#tf8e3b265-b0ba-b86e-0e97-2080e22dcca8" id="linkf8e3b265-b0ba-b86e-0e97-2080e22dcca8" style="color: #3366ff;">autocorrelación espacial positiva</a></span>. Los valores de I próximos a cero indican que no hay estructura.</p>
+<p><img src="img1.1.png" width="629" height="244" alt="Correlaciones" /></p>
+<p>Las relaciones espaciales se pueden <span style="color: #333333;">buscar por <span style="text-decoration: underline;">distancias</span>, por <span style="text-decoration: underline;">vecinos próximos</span> o por <span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t0c9620f0-d68f-c18d-c504-7db89130695d" id="link0c9620f0-d68f-c18d-c504-7db89130695d" style="color: #3366ff;"><span style="text-decoration: underline;">contigüidad</span></a></span> (cuando</span> hablamos de entidades tipo polígono)</p>
+<p>Las constricciones que tiene el cálculo del índice son las siguientes: </p>
+<ul>
+<li>Los resultados no son confiables con menos de 30 entidades.</li>
+<li>Todas las entidades deben tener al menos un vecino.</li>
+<li>Ninguna entidad debe tener todas las otras entidades como vecinos.</li>
+<li>En caso de que los valores de la variable estén sesgados, las entidades debían tener aproximadamente ocho vecinos cada una.</li>
+</ul>
+<h2>G general de Getis-Ord</h2>
+<p>Mide el grado de concentración para valores altos o bajos.</p>
+<p>La hipótesis nula: <span style="text-decoration: underline;"><em>"no existe agrupación espacial de los valores de la variable"</em></span></p>
+<p>Consiste en una relación entre la media ponderada de los valores de las ubicaciones vecinas y la suma de todos los valores, sin incluir el valor de la ubicación (<em>x<sub>i</sub></em>)</p>
+<p><img src="img4.2.png" width="275" height="104" alt=".." /></p>
+<p>Un valor mayor que la media sugiere un conglomerado Alto o un <strong>punto caliente</strong>, un valor menor que la media, indica un conglomerado Bajo o un <strong>punto frío</strong>.</p>
+<p>El estadístico G General Getis-Ord es más adecuado cuando se tiene una distribución bastante uniforme de los valores y se buscan picos espaciales inesperados de valores altos. Sin embargo, cuando los valores altos y bajos se agrupan, tienden a anularse mutuamente.</p>
+<h2>Autocorrelación Espacial Incremental</h2>
+<p>Mide la autocorrelación espacial a una serie de distancias.</p>
+<p>Las puntuaciones z reflejan la intensidad de la agrupación espacial, y las puntuaciones z máximas estadísticamente significativas indican las distancias en las que los procesos espaciales que promueven la agrupación son más pronunciados.</p>
+<p>Estas distancias máximas suelen ser <strong>valores apropiados para herramientas con un parámetro de distancias de banda o radio de distancia</strong>.</p>
+<p><img src="img3.png" width="599" height="375" alt="correlacion_distancia" /></p>
+<p><span style="font-size: 10pt;"><em>Fuente: Manual ArcGIS</em></span></p>
+</div>
+<p></p>
+<div id="t8e88c701-afb7-bffc-07cb-77755cdf907b" class="exe-dialog-text js-hidden">
+<p>La proximidad entre los valores viene dada por<em> <strong>w<sub>ij</sub></strong></em>, que es un peso geográfico que a menudo se establece en 1 cuando las ubicaciones <em>i</em> y <em>j</em> son vecinas y en 0 cuando no lo son. </p>
+</div>
+<div id="t0c9620f0-d68f-c18d-c504-7db89130695d" class="exe-dialog-text js-hidden">
+<p>se puede buscar siguiendo distintas conexiones topológicas:</p>
+<p><img src="img4.1.png" width="492" height="224" alt="topología" /></p>
+</div>
+<div id="t439c0866-38e1-f370-462e-27c84b848ed4" class="exe-dialog-text js-hidden">
+<p>Los valores vecinos tienden a ser diferentes.</p>
+</div>
+<div id="tf8e3b265-b0ba-b86e-0e97-2080e22dcca8" class="exe-dialog-text js-hidden">
+<p>Los valores vecinos tienden a ser similares.</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="contenidos_del_tema.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="comparacin_i_moran_g_general_getisord.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

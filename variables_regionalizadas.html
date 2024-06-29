@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Variables regionalizadas | Tema_4 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Elia Quirós Rosado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-7"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema_4</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 4: Aplicaciones estadísticas a modelos vectoriales</a></li>
+   <li><a href="objetivos_del_tema_4.html" class="no-ch">Objetivos del tema 4</a></li>
+   <li class="current-page-parent"><a href="contenidos_del_tema.html" class="current-page-parent daddy">Contenidos del tema</a>
+   <ul>
+      <li><a href="ndices_de_correlacin_espacial.html" class="daddy">Índices de correlación espacial</a>
+      <ul class="other-section">
+         <li><a href="comparacin_i_moran_g_general_getisord.html" class="no-ch">Comparación I Moran/ G general Getis-Ord</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="modelo_de_funcin_aleatoria.html" class="current-page-parent daddy">Modelo de función aleatoria</a>
+      <ul>
+         <li id="active"><a href="variables_regionalizadas.html" class="active no-ch">Variables regionalizadas</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="documentacin_del_tema.html" class="daddy">Documentación del tema</a>
+   <ul class="other-section">
+      <li><a href="datos.html" class="no-ch">Datos</a></li>
+   </ul>
+   </li>
+   <li><a href="modelo_memoria_de_la_prctica.html" class="no-ch">Modelo memoria de la práctica</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="modelo_de_funcin_aleatoria.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="documentacin_del_tema.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Variables regionalizadas</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_lee" id="id7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Variables regionalizadas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta7_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Existen diversos métodos geoestadísticos que dan respuesta a las preguntas planteadas anteriormente:</p>
+<div class="exe-fx exe-tabs">
+<h2>Mínimos cuadrados ordinarios (OLS)</h2>
+<p>La expresión general de un modelo de regresión, para un total de k variables explicativas es:</p>
+<p><span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t0220a6c7-e0a9-760d-94a7-f5ebba12d065" id="link0220a6c7-e0a9-760d-94a7-f5ebba12d065" style="color: #3366ff;"> <img src="img0.3.png" width="345" height="32" alt="ecuación" /> </a></span></p>
+<hr />
+<p><strong>El error</strong> del modelo de regresión <strong>será la diferencia entre el valor real</strong> de la variable<strong> y el valor propuesto</strong> para la misma en el modelo. A la hora de generar el modelo, lo deseable es que el error fuera lo más pequeño posible.</p>
+<p>En cada punto de estudio conocemos el valor de todas las variables, luego tendremos tantas ecuaciones como puntos disponibles:</p>
+<p><img src="img1.2.png" width="372" height="97" alt="ecuación" /></p>
+<p>Por tanto, tendremos múltiples rectas o hiperplanos (según el número de variables explicativas) posibles para explicar la relación entre las variables:</p>
+<p><img src="img2.1.png" width="469" height="331" alt="hiperplanos" /></p>
+<p><span style="font-size: 10pt;"><em>Fuente: Chirivella González, V. (2015</em></span>)</p>
+<p>El método de los<strong> mínimos cuadrados ordinarios</strong> consiste en la obtención de un hiperplano de forma que se minimice la suma de los cuadrados de las distancias entre cada una de las observaciones de la variable y dicho hiperplano (residuos).</p>
+<p><img src="img3.1.png" width="433" height="294" alt="minimos_cuadrados" /></p>
+<p><span style="font-size: 10pt;"><em>Fuente: Chirivella González, V. (2015)</em></span></p>
+<p><strong>Se estima el mínimo error sumando al cuadrado todas las distancias</strong>, para que las negativas no anulen a las positivas y al elevarlo al cuadrado, penalizamos mucho más los puntos que están más alejados, y que tienen más error.</p>
+<h2>Regresión exploratoria</h2>
+<p>Encontrar un modelo OLS correcto puede ser difícil, especialmente cuando hay muchas posibles variables explicativas que podrían ser importantes para modelar la variable dependiente.</p>
+<p>La Regresión exploratoria es una herramienta de extracción de datos que <strong>realiza todas las combinaciones posibles de variables explicativas</strong> para ver qué modelos superan todos los estadísticos de OLS.</p>
+<p>Aunque la Regresión exploratoria es similar a la Regresión por pasos, en lugar de solo buscar modelos con valores altos de R2 ajustada, la Regresión exploratoria busca modelos que cumplan con todos los requisitos y suposiciones del método de OLS.</p>
+<p><span style="color: #3366ff;"><a title="¿cómo actuar?" class="exe-dialog-link" rel="lightbox" href="#taa4628e9-e452-83f3-2b97-6e1bdde9758c" id="linkaa4628e9-e452-83f3-2b97-6e1bdde9758c" style="color: #3366ff;">Este tipo de estudios podrían ser rechazados por algunos investigadores ya que, en teoría, se deben formalizar las hipótesis antes de explorar los datos para evitar la creación de modelos que se ajusten solo a los datos concretos, y no reflejen los procesos más amplios. </a></span></p>
+<h2>Regresión ponderada geográficamente (GWR)</h2>
+<p>La regresión ponderada geográficamente es una forma local de regresión lineal que s<strong>e utiliza para modelar las relaciones entre la variable dependiente y explicativas que varían espacialmente</strong>.</p>
+<p>En el caso de los datos geográficamente dispersos con variabilidad espacial inherente, la estimación de los coeficientes de un modelo de regresión para una ubicación concreta basada únicamente en las observaciones de dicha ubicación no es factible debido al reducido número de observaciones.</p>
+<p>La regresión ponderada geográficamente es una herramienta importante para <strong>explorar la no estacionariedad espacial</strong>.</p>
+<p>Mediante el uso de GWR, se construye una ecuación de regresión distinta para cada observación del conjunto de datos al <strong>incorporar las variables dependiente y explicativas de las entidades vecinas que caen dentro de un ancho de banda</strong>.</p>
+<p>Al estimar el parámetro para una localización especifica, los elementos en los datos se ponderan según su distancia a esta localización, <strong>con mayor peso para los elementos más cercanos</strong>.</p>
+<hr />
+<p>El modelo GWR puede ser descrito de la siguiente forma:</p>
+<p><span style="background-color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t967d20e7-4e5c-2d7b-17db-ab7a9046cd5f" id="link967d20e7-4e5c-2d7b-17db-ab7a9046cd5f" style="background-color: #3366ff;"><img src="img4.png" width="433" height="51" alt="GWR" /></a></span></p>
+<p>El tipo de modelo puede ser: <span style="color: #3366ff;"><strong><a class="exe-dialog-link" rel="lightbox" href="#t59602be3-9b3a-bdf1-6539-a10edb92d235" id="link59602be3-9b3a-bdf1-6539-a10edb92d235" style="color: #3366ff;">Gaussiano</a>, <a class="exe-dialog-link" rel="lightbox" href="#t158ad5f6-6d40-a500-b69f-ea01b6685daa" id="link158ad5f6-6d40-a500-b69f-ea01b6685daa" style="color: #3366ff;">Logístico</a> o <a class="exe-dialog-link" rel="lightbox" href="#tbb48ca4f-75d5-1dbb-68a0-3cae14c73504" id="linkbb48ca4f-75d5-1dbb-68a0-3cae14c73504" style="color: #3366ff;">Poisson</a></strong></span>, <span style="text-decoration: underline;">a diferencia del OLS, que siempre es lineal</span>.</p>
+<hr />
+<p>Las <strong>relaciones de vecindad</strong>, como en otros estadísticos, pueden darse o bien <span style="text-decoration: underline;">por distancia</span> o valor <span style="text-decoration: underline;">máximo de vecinos</span>.</p>
+<p>El peso de los elementos más cercanos se puede usar un esquema de ponderación <span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#t73c56f5c-40ab-600c-413b-cc23f1a7b1ea" id="link73c56f5c-40ab-600c-413b-cc23f1a7b1ea" style="color: #3366ff;"><strong>Gaussiano</strong></a></span> o<span style="color: #3366ff;"><a class="exe-dialog-link" rel="lightbox" href="#tc97a62b1-7208-0900-2820-5a32a5338e44" id="linkc97a62b1-7208-0900-2820-5a32a5338e44" style="color: #3366ff;"><strong> Bicuadrado</strong></a></span></p>
+</div>
+<p></p>
+<div id="t0220a6c7-e0a9-760d-94a7-f5ebba12d065" class="exe-dialog-text js-hidden">
+<p><strong><em>Y</em></strong> es la variable explicada.</p>
+<p><strong><em>X<sub>j</sub></em> </strong>son las variables explicativas.</p>
+<p><strong><em>β<sub>j </sub></em></strong>son unos parámetros que cuantifican la relación existente entre la variable explicada y cada variable explicativa.</p>
+<p><strong>U </strong>es la variable aleatoria que recoge la influencia sobre la variable explicada de otras variables explicativas que no hemos tenido en cuenta en el modelo.</p>
+</div>
+<div id="taa4628e9-e452-83f3-2b97-6e1bdde9758c" class="exe-dialog-text js-hidden">
+<p>La mejor forma de actuar es seleccionar previamente variables de regresión explicativa compatibles con el sentido común. Después, construir los modelos de regresión con una parte de sus datos, por ejemplo, el 70% de los datos y validarlos con el resto (30%).</p>
+</div>
+<div id="t967d20e7-4e5c-2d7b-17db-ab7a9046cd5f" class="exe-dialog-text js-hidden">
+<p><strong><em>y(s)</em></strong> es la variable de respuesta en el lugar <em>s.</em></p>
+<p><strong><em>β<sub>i</sub>(s)</em>, <em>i</em> = 1, 2, ...,<em> p</em></strong> son los coeficientes de las variables independientes en el lugar <em>s.</em></p>
+<p><strong><em> Є(s)</em></strong> es el efecto aleatorio en el lugar <em>s</em> también llamado <strong>“intercepción”</strong>.</p>
+</div>
+<div id="t59602be3-9b3a-bdf1-6539-a10edb92d235" class="exe-dialog-text js-hidden">
+<p>Para variables continuas (por ejemplo, valores de temperatura).</p>
+</div>
+<div id="t158ad5f6-6d40-a500-b69f-ea01b6685daa" class="exe-dialog-text js-hidden">
+<p>Para variables binarias (por ejemplo, presencia o ausencia).</p>
+</div>
+<div id="tbb48ca4f-75d5-1dbb-68a0-3cae14c73504" class="exe-dialog-text js-hidden">
+<p>Para variables de recuento (por ejemplo, número de ocurrencias de un suceso).</p>
+</div>
+<div id="t73c56f5c-40ab-600c-413b-cc23f1a7b1ea" class="exe-dialog-text js-hidden">
+<p>Disminuye gradualmente a medida que aumenta la distancia de la entidad de regresión.</p>
+</div>
+<div id="tc97a62b1-7208-0900-2820-5a32a5338e44" class="exe-dialog-text js-hidden">
+<p>Como el gaussiano, pero todas las entidades que quedan fuera de la vecindad especificada se les asigna cero y no afectan a la regresión local.</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="modelo_de_funcin_aleatoria.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="documentacin_del_tema.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
